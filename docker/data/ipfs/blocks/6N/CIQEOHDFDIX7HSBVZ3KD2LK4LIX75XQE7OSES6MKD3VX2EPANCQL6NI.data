@@ -1,0 +1,31 @@
+
+Ž†dataSources:
+  - kind: ethereum
+    mapping:
+      abis:
+        - file:
+            /: /ipfs/Qme2ZQbx73L6Rjc9kxZpSfJJamhJzu7xGqvwaPRULG3x54
+          name: storag
+      apiVersion: 0.0.7
+      entities:
+        - NewTransaction
+      eventHandlers:
+        - event: 'NewTransaction(indexed uint256,address,uint256)'
+          handler: handleNewTransaction
+      file:
+        /: /ipfs/QmVBuUTaVXpjt3cYpjRK4Miq8pCVwWLKPhizFov3LKvVNg
+      kind: ethereum/events
+      language: wasm/assemblyscript
+    name: storag
+    network: testnet
+    source:
+      abi: storag
+      address: '0x2f8e0dD3664dE146C3b8E56409ccEd3e6Cd4B153'
+      startBlock: 4484946
+indexerHints:
+  prune: auto
+schema:
+  file:
+    /: /ipfs/Qmba4pqv8Xz4K4rWmuze1hXUwee7hMArJT3kBwMDjBoH3s
+specVersion: 1.0.0
+†

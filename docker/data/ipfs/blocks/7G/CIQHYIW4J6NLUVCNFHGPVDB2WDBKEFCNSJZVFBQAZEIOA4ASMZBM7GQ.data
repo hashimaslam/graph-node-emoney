@@ -1,0 +1,29 @@
+
+Ã»dataSources:
+  - kind: ethereum/contract
+    mapping:
+      abis:
+        - file:
+            /: /ipfs/QmVPdBm7yEA5rDQgFJF6a7gwu851Gghnja1fShwCvwyhKB
+          name: ConverterRegistryContract
+      apiVersion: 0.0.6
+      blockHandlers:
+        - handler: handleBlock
+      entities:
+        - ConverterAddition
+      file:
+        /: /ipfs/QmZxKFMj6vTfadWoyuXsyCGqViE3f69cVxYP2Mo2ZHrL1S
+      kind: ethereum/events
+      language: wasm/assemblyscript
+    name: ConverterRegistryContract
+    network: emoney-testnet
+    source:
+      abi: ConverterRegistryContract
+      address: '0x0ddff327ddf7fe838e3e63d02001ef23ad1ede8e'
+description: Indexing all Ethereum Block data
+repository: 'https://github.com/blocklytics/ethereum-blocks'
+schema:
+  file:
+    /: /ipfs/Qmbdxh2z2mwmwxzG27XRXjSm9rXZkvHTqsfeNuJEWMeQpb
+specVersion: 0.0.4
+»

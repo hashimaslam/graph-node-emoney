@@ -1,0 +1,11 @@
+
+áÙtype NewTransaction @entity(immutable: true) {
+  id: Bytes!
+  number: BigInt! # uint256
+  sender: Bytes! # address
+  num: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+Ù
